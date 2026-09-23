@@ -7,8 +7,4 @@ jobs:
       - name: Read the readme
         run: cat README.md
       - name: Show the Python version
-<<<<<<< HEAD
-        run: pyhton3 --version
-=======
         run: python3 --version
->>>>>>> 4bfd4e9 (fixed)
