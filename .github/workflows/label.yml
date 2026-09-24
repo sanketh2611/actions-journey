@@ -5,5 +5,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: format
-        run: ${{ format('build {0} of {1}', github.run_number, github.ref_name) }}
+        run: ${{ format('build-{0}-{1}', github.run_number, github.ref_name) }}
 
