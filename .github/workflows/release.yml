@@ -2,11 +2,8 @@ name: Release Workflow
 on: push
 jobs:
   release:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Call Notify Workflow
-        uses: ./.github/workflows/notify.yml
-        with:
-          environment: ${{ github.event.inputs.environment }}
-        secrets:
-          NOTIFY_TOKEN: ${{ github.event.inputs.NOTIFY_TOKEN }}
+    uses: ./.github/workflows/notify.yml
+    with:
+      environment: ${{ github.event.inputs.environment }}
+    secrets:
+      NOTIFY_TOKEN: ${{ github.event.inputs.NOTIFY_TOKEN }}
