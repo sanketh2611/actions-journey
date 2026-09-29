@@ -2,7 +2,7 @@ name: Checks Workflow
 on:
   workflow_call:
 jobs:
-  check_job:
+  checks:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
