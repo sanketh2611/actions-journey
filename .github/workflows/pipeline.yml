@@ -2,7 +2,4 @@ name: Pipeline Workflow
 on: push
 jobs:
   pipeline:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Call Checks Workflow
-        uses: ./.github/workflows/checks.yml
+    uses: ./.github/workflows/checks.yml
