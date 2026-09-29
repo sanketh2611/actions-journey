@@ -1,0 +1,11 @@
+name: Checks Workflow
+on:
+  workflow_call:
+jobs:
+  check_job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      - name: Echo step
+        run: echo "This is a check step."
